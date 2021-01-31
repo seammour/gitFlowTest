@@ -41,3 +41,45 @@ Select the feature branch name and click on “x Add Spec”.
 ##Etape 9 : Push develop to remote:
 
 In Git perspective, right click on project --> Push branch develop.
+
+## 4.2 Finish Release Branch:
+
+Right click on project --> Git flow --> Finish Release.
+
+Release branch 'release/2016-05-12.0' has been merged into 'master'
+- The release was tagged '2016-05-12.0'
+- Release tag '2016-05-12.0' has been back-merged into 'develop'
+- Release branch 'release/2016-05-12.0' has been locally deleted; it has been remotely deleted from 'origin'
+- You are now on branch 'develop'
+
+Above command will merge release into develop and master and tag the release and delete release branch locally.
+
+Things to do now:
+·        Push local develop branch to remote as release branch merged its changes to develop branch.
+·        Git flow will not push your tags into origin. You need to push tags into remote repository.
+·        Delete release branch from remote repository.
+
+# Release 
+## Start Release Branch:
+
+In Git perspective, right click on project --> Git flow --> Start Release. Provide name for the release “2016-05-12.0”
+
+
+Now, new branch 'release/2016-05-12.0' was created, based on 'develop' and you’re on release branch now.
+
+Zero after decimal is the increment for the release. Release branch is created off of develop branch. Once you create release branch you need to publish it, so QA can take the code and do some testing.
+
+## Push local develop branch to remote:
+Right click on project --> Push branch develop.
+
+## Push tags into remote repository:
+Right click on project --> Remote --> Push Tags.
+
+## Delete release branch from remote repository:
+Right click on project --> Remote --> Push.
+Enter the destination repository location --> Click “Next.
+Select the branch name and click on “x Add Spec”.
+
+
+
+Click “Finish”.
